@@ -72,9 +72,9 @@ function App() {
     const inFavorito = favoritos.some(f => f.nombre === item.nombre)
     const favoritosActualizados = [...favoritos, item]
     if (inFavorito) {
-      const sinItem = favoritos.filter(i => i.nombre !== item.nombre)
-      localStorage.setItem("favoritosLS", JSON.stringify(sinItem))
-      setFavoritos(sinItem)
+      // const sinItem = favoritos.filter(i => i.nombre !== item.nombre)
+      // localStorage.setItem("favoritosLS", JSON.stringify(sinItem))
+      // setFavoritos(sinItem)
       InventarioAlerta(item);
     } else {
       localStorage.setItem("favoritosLS", JSON.stringify(favoritosActualizados));
