@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 // import frankenstain from '/img/frankenstein.jpg'
 // import './App.css'
 
@@ -12,11 +12,11 @@ import { AgregarInventario } from './AgregarInventario/';
 import { ItemsFavoritos } from './ItemsFavoritos/'
 import { supabase } from './supabaseClient';
 import { InventarioAlerta } from './InventarioAlerta';
-import { InventarioLoading } from './InventarioLoading';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [busqueda, setBusqueda] = useState("");
+
 
   //Favoritos
   const [showFavoritos, setOpenFavoritos] = useState(false);
