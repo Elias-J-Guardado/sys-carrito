@@ -1,5 +1,5 @@
-import ReactLoading from "react-loading";
-import InventarioLoading from "./InventarioLoading.css"
+// import ReactLoading from "react-loading";
+// import InventarioLoading from "./InventarioLoading.css"
 
 
 function InventarioLoading() {

@@ -12,6 +12,7 @@ import { AgregarInventario } from './AgregarInventario/';
 import { ItemsFavoritos } from './ItemsFavoritos/'
 import { supabase } from './supabaseClient';
 import { InventarioAlerta } from './InventarioAlerta';
+import { InventarioLoading } from './InventarioLoading';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
