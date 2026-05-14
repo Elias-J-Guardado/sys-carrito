@@ -26,7 +26,7 @@ function AgregarInventario({ show, handleClose, onGuardar, productoEditar = null
             .from("imagen-inventario")
             .upload(nombreFile, file);
 
-        console.log("Upload data: ", data);
+        
         console.log("upload error: ", error)
 
         if (error) {
@@ -39,6 +39,8 @@ function AgregarInventario({ show, handleClose, onGuardar, productoEditar = null
             .getPublicUrl(nombreFile);
 
         setImagenUrl(urlData.publicUrl)
+
+        console.log("imagen: ", urlData.publicUrl);
     }
 
     return (
