@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 // import frankenstain from '/img/frankenstein.jpg'
 // import './App.css'
 
@@ -16,6 +16,7 @@ import { InventarioAlerta } from './InventarioAlerta';
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [busqueda, setBusqueda] = useState("");
+
 
   //Favoritos
   const [showFavoritos, setOpenFavoritos] = useState(false);
